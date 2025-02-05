@@ -9,7 +9,7 @@ namespace API.Infrastructure
         public static ValidationResult ValidateIfNullModel<T>(this AbstractValidator<T> validator, T model)
         {
             return model == null
-                ? new ValidationResult(new[] {new ValidationFailure(typeof(T).Name, "Model cannot be null.")})
+                ? new ValidationResult(new[] { new ValidationFailure(typeof(T).Name, "Model cannot be null.") })
                 : validator.Validate(model);
         }
 
