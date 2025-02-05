@@ -34,7 +34,7 @@ namespace API
         {
             if (!context.Categories.Any())
             {
-                context.Categories.Add(new Category {Id = 100, Name = "Fruits and Vegetables"});
+                context.Categories.Add(new Category { Id = 100, Name = "Fruits and Vegetables" });
                 context.Categories.Add(new Category { Id = 101, Name = "Dairy" });
             }
         }
